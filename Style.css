@@ -1,0 +1,614 @@
+/* =========================================
+   GLOBAL RESET & BASE THEME
+========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0d0f14;
+  color: #e6e7eb;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+
+/* =========================================
+   FULL HEIGHT SECTIONS
+========================================= */
+section,
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+.navbar {
+  background: rgba(0,0,0,0.7) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1f2129;
+  padding: 15px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #cbd5e1;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #60a5fa;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+#hero {
+  background: linear-gradient(135deg, #0d0f14 0%, #1a1c23 100%);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+
+.hero-text {
+  color: #94a3b8;
+  max-width: 500px;
+}
+
+.btn-primary-custom {
+  background: #3b82f6;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background: #60a5fa;
+}
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+#about .card {
+  background: #0f1724;
+  border-radius: 18px;
+}
+
+/* =========================================
+   SKILLS
+========================================= */
+.skill-box {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #2a2c35;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.25s ease;
+  text-align: center;
+}
+
+.skill-box:hover {
+  background: rgba(255,255,255,0.10);
+  transform: translateY(-3px);
+}
+
+.skill-icon {
+  font-size: 32px;
+}
+
+.icon-html { color: #e44d26; }
+.icon-css { color: #2965f1; }
+.icon-js { color: #f7df1e; }
+.icon-bootstrap { color: #7952b3; }
+
+.skill-text,
+#skills h5 {
+  color: #fff !important;
+}
+
+/* =========================================
+   STAT CARDS
+========================================= */
+.stat-card {
+  background: #1a1c23;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #2a2c35;
+}
+
+.stat-number {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #60a5fa;
+}
+
+.stat-label {
+  color: #94a3b8;
+}
+
+/* =========================================
+   PORTFOLIO
+========================================= */
+#portfolio {
+  background: #0c0f17;
+}
+
+#portfolio .card {
+  background: rgba(255,255,255,0.03);
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.35s ease;
+  animation: fadeUp 0.7s ease forwards;
+}
+
+#portfolio .card:hover {
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+#portfolio .card img {
+  transition: 0.35s ease;
+}
+
+#portfolio .card:hover img {
+  transform: scale(1.03);
+}
+
+.card-custom {
+  background: var(--card);
+  border-radius: 18px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+}
+.card-custom {
+  background: var(--card);
+  border-radius: 12px;
+}
+.rounded-map {
+  border-radius: 12px;
+  overflow: hidden;
+}
+/* Container utk map */
+.map-container {
+  width: 100%;
+  height: 250px; /* Bisa diganti sesuai kebutuhan */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Agar responsif penuh */
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Sudut membulat dari map */
+.rounded-map {
+  border-radius: 12px;
+}
+
+
+/* Delay animasi */
+#portfolio .col-md-4:nth-child(1) .card { animation-delay: .1s; }
+#portfolio .col-md-4:nth-child(2) .card { animation-delay: .25s; }
+#portfolio .col-md-4:nth-child(3) .card { animation-delay: .4s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   SERVICES
+========================================= */
+#services {
+  background: #0c0f17;
+}
+
+/* CARD BASE */
+.service-box {
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;              /* lebih smooth */
+  padding: 28px;                    /* diperbesar */
+  min-height: 165px;                /* biar lebih "berisi" */
+  position: relative;
+  transition: 0.3s ease;
+  overflow: hidden;
+  transform: scale(1);              /* dasar */
+}
+
+/* highlight kiri */
+.service-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #2563eb;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover::before {
+  transform: scaleY(1);
+}
+
+/* EFFECT */
+.service-box:hover {
+  background: rgba(255,255,255,0.08);
+  transform: scale(1.03);           /* sedikit membesar */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* TEXT */
+.service-box h5 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.15rem;               /* sedikit lebih besar */
+}
+
+.service-box p {
+  color: #e6e6e6;
+  font-size: 0.95rem;               /* biar lebih nyaman dibaca */
+  line-height: 1.45;
+}
+
+/* =========================================
+   CERTIFICATE
+========================================= */
+.cert-img-single {
+  max-height: 460px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.profile-img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+#contact {
+  padding: 60px 0;
+}
+
+#contact .card {
+  background: #0f1724;
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #1c2533;
+}
+
+/* Form Controls */
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  background: #182132;
+  border: 1px solid #2a3444;
+  color: #fff;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.2s ease;
+}
+
+#contactForm textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Focus */
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Label */
+#contactForm label {
+  color: #d1d5db;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Submit Button */
+#contactForm button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#contactForm button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+.cta-section {
+  padding: 80px 0;
+  background: #11131a;
+  text-align: center;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+.footer-dark {
+  background: #11131a;
+  padding: 30px 0;
+  text-align: center;
+  border-top: 1px solid #1f2129;
+}
+
+.footer-dark p {
+  color: #94a3b8;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 768px) {
+  section,
+  header {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+  }
+
+  .stat-card {
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+.img-social-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 16px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+  .social-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* Limit text (tetap) */
+.limit-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-p {
+  display: inline-block;       /* agar bisa diberi padding dan efek */
+  padding: 0.5rem 1rem;        /* jarak di dalam tombol */
+  background-color: #ffffff;   /* warna tombol, bisa diganti */
+  color: #000000;              /* warna teks */
+  border-radius: 8px;          /* sudut membulat */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* efek ringan */
+  cursor: default;             /* pointer bisa diubah jika perlu klik */
+  margin-bottom: 0.5rem;       /* jarak antar tombol */
+  font-weight: 500;
+}
+
+.btn-p:hover {
+  background-color: #f0f0f0;  /* efek hover */
+}
+
+.wa-wrapper{
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+}
+
+/* teks default disembunyikan */
+.wa-text{
+  background: #000;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.25s ease;
+}
+
+/* muncul saat hover */
+.wa-wrapper:hover .wa-text{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* tombol WhatsApp */
+.wa-floating {
+  width: 68px;
+  height: 68px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.35);
+  transition: transform 0.2s ease;
+}
+
+.wa-floating i{
+  font-size: 34px;
+  color: #fff;
+}
+
+.wa-floating:hover{
+  transform: scale(1.12);
+}
+
+/* Section Background */
+#testimonials{
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+/* Card Style */
+.card-custom{
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.card-custom:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+/* Title */
+#testimonials h3{
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* Testimonial Text */
+.carousel-item p{
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* Client Name */
+.carousel-item h5{
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* Client Role */
+.carousel-item small{
+  opacity: 0.7;
+}
+
+/* Carousel Fade Effect */
+.carousel-item{
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* Indicators */
+.carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+}
+
+/* Smooth Appearance */
+#testimonials .card-custom{
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+

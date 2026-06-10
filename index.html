@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+
+<head>
+  <!-- ============================================================
+     SEO OPTIMIZATION — apwenda.github.io
+     Deni Wenda | Web Developer Jayapura, Papua, Indonesia
+     ============================================================ -->
+
+  <!-- PRIMARY META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deni Wenda — Web Developer Jayapura, Papua | Jasa Website Profesional</title>
+  <meta name="description"
+    content="Jasa pembuatan website profesional di Jayapura, Papua. Deni Wenda — Web Developer berpengalaman untuk website UMKM, company profile, landing page, dan digital menu. Responsif, modern, dan siap pakai.">
+  <meta name="keywords"
+    content="web developer Jayapura, jasa pembuatan website Jayapura, web developer Papua, website UMKM Papua, landing page Jayapura, website profesional Jayapura, web developer Indonesia">
+  <meta name="author" content="Deni Wenda">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="geo.region" content="ID-PA">
+  <meta name="geo.placename" content="Jayapura, Papua, Indonesia">
+  <meta name="geo.position" content="-2.5916024;140.6401348">
+  <meta name="ICBM" content="-2.5916024, 140.6401348">
+  <meta name="language" content="Indonesian">
+  <meta name="revisit-after" content="7 days">
+
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://apwenda.github.io/">
+
+  <!-- OPEN GRAPH / FACEBOOK -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://apwenda.github.io/">
+  <meta property="og:title" content="Deni Wenda — Web Developer Jayapura, Papua">
+  <meta property="og:description"
+    content="Jasa pembuatan website profesional di Jayapura, Papua. Website UMKM, company profile, landing page, dan digital menu — modern, responsif, dan siap pakai.">
+  <meta property="og:image" content="https://apwenda.github.io/assets/img/Profile.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Deni Wenda — Web Developer Jayapura Papua">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Deni Wenda — Web Developer Jayapura">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Deni Wenda — Web Developer Jayapura, Papua">
+  <meta name="twitter:description"
+    content="Jasa pembuatan website profesional di Jayapura, Papua. Website UMKM, company profile, landing page — modern, responsif, siap pakai.">
+  <meta name="twitter:image" content="https://apwenda.github.io/assets/img/Profile.jpg">
+  <meta name="twitter:image:alt" content="Deni Wenda Web Developer Jayapura Papua">
+  <meta name="twitter:creator" content="@deniwenda">
+
+  <!-- FAVICON & TOUCH ICONS -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- PRECONNECT (Performance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Deni Wenda",
+    "url": "https://apwenda.github.io/",
+    "image": "https://apwenda.github.io/assets/img/Profile.jpg",
+    "jobTitle": "Web Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jayapura",
+      "addressRegion": "Papua",
+      "addressCountry": "ID"
+    },
+    "sameAs": ["https://github.com/Apwenda","https://www.linkedin.com/"]
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Alpine.js CDN -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'id',
+        includedLanguages: 'en,id,zh,ja,ko,ar,fr,de,es,pt',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            dark: {
+              950: '#040d1a',
+              900: '#071224',
+              850: '#0b1a30',
+              800: '#0f2239',
+              700: '#162d4d',
+              600: '#1e3a5f',
+            },
+            brand: {
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.6s ease forwards',
+            'pulse-slow': 'pulse 3s ease-in-out infinite',
+            'float': 'float 4s ease-in-out infinite',
+            'glow': 'glow 2s ease-in-out infinite alternate',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 20px rgba(59,130,246,0.3)' },
+              '100%': { boxShadow: '0 0 40px rgba(59,130,246,0.7)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #040d1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #1e3a5f;
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2563eb;
+    }
+
+    /* Dark mode base */
+    .dark body {
+      background-color: #040d1a;
+      color: #e2e8f0;
+    }
+
+    /* Light mode base */
+    body.light-mode {
+      background-color: #f0f6ff;
+      color: #1e293b;
+    }
+
+    /* Gradient mesh background */
+    .hero-bg {
+      background: radial-gradient(ellipse at 20% 50%, rgba(37, 99, 235, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(29, 78, 216, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 100%, rgba(59, 130, 246, 0.08) 0%, transparent 60%);
+    }
+
+    .dark .hero-bg {
+      background: radial-gradient(ellipse at 20% 50%, rgba(37, 99, 235, 0.18) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(29, 78, 216, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 100%, rgba(59, 130, 246, 0.1) 0%, transparent 60%);
+    }
+
+    /* Glass card */
+    .glass-card {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .dark .glass-card {
+      background: rgba(15, 34, 57, 0.7);
+      border: 1px solid rgba(59, 130, 246, 0.15);
+    }
+
+    .light-mode .glass-card {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    /* Skill tag hover */
+    .skill-tag:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+    }
+
+    .skill-tag {
+      transition: all 0.25s ease;
+    }
+
+    /* Nav active link */
+    .nav-link.active,
+    .nav-link:hover {
+      color: #60a5fa !important;
+    }
+
+    /* Grid noise texture overlay */
+    .noise-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Section reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Profile image ring */
+    .profile-ring {
+      background: conic-gradient(from 0deg, #2563eb, #60a5fa, #1d4ed8, #2563eb);
+      animation: spin 6s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Animate-in delay utilities */
+    .delay-100 {
+      animation-delay: 0.1s;
+    }
+
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-300 {
+      animation-delay: 0.3s;
+    }
+
+    /* Google Translate styling */
+    #google_translate_element .goog-te-combo {
+      background: rgba(30, 58, 95, 0.8) !important;
+      color: #93c5fd !important;
+      border: 1px solid rgba(59, 130, 246, 0.3) !important;
+      border-radius: 8px !important;
+      padding: 5px 8px !important;
+      font-family: 'Plus Jakarta Sans', sans-serif !important;
+      font-size: 13px !important;
+      cursor: pointer;
+    }
+
+    #google_translate_element .goog-te-combo:focus {
+      outline: none !important;
+      border-color: #3b82f6 !important;
+    }
+
+    .goog-te-banner-frame,
+    .skiptranslate {
+      display: none !important;
+    }
+
+    body {
+      top: 0 !important;
+    }
+
+    /* Mobile menu transition */
+    #mobile-menu {
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    #mobile-menu.open {
+      max-height: 600px;
+      opacity: 1;
+    }
+
+    /* Cert carousel */
+    .cert-slide {
+      display: none;
+    }
+
+    .cert-slide.active {
+      display: flex;
+    }
+
+    /* WhatsApp floating button */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      width: 54px;
+      height: 54px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 28px rgba(37, 211, 102, 0.7);
+    }
+
+    /* Light mode overrides */
+    .light-mode .dark-card {
+      background: #ffffff;
+      border-color: rgba(59, 130, 246, 0.15);
+      color: #1e293b;
+    }
+
+    .light-mode .section-bg-alt {
+      background-color: #e8f0fe;
+    }
+
+    .dark .section-bg-alt {
+      background-color: #071224;
+    }
+
+    .section-bg-alt {
+      background-color: #0b1a30;
+    }
+  </style>
+</head>
+
+<body x-data="app()" :class="{'light-mode': !isDark}" class="antialiased transition-colors duration-300">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    :class="scrolled ? 'dark:bg-dark-900/95 bg-white/95 shadow-lg shadow-brand-600/10 backdrop-blur-md border-b dark:border-dark-700/50 border-blue-100' : 'bg-transparent'">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="#beranda" class="flex items-center gap-3 group">
+          <div
+            class="w-9 h-9 rounded-xl flex items-center justify-center shadow-lg transition-all duration-300 group-hover:scale-110"
+            style="background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+              <rect width="40" height="40" rx="10" fill="url(#logoGrad)" />
+              <defs>
+                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#1e3a5f" />
+                  <stop offset="100%" style="stop-color:#2563eb" />
+                </linearGradient>
+              </defs>
+              <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+                font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="21" fill="#93c5fd">D</text>
+            </svg>
+          </div>
+          <span class="font-bold text-sm sm:text-base dark:text-slate-100 text-slate-800">Deni Wenda</span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="hidden lg:flex items-center gap-1 text-sm font-medium">
+          <li><a href="#beranda"
+              class="nav-link px-3 py-2 rounded-lg dark:text-slate-300 text-slate-600 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all duration-200">
+              <i class="fa-solid fa-house mr-1.5 text-xs"></i>Beranda</a></li>
+          <li><a href="#tentang"
+              class="nav-link px-3 py-2 rounded-lg dark:text-slate-300 text-slate-600 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all duration-200">
+              <i class="fa-solid fa-user mr-1.5 text-xs"></i>Tentang</a></li>
+          <li><a href="#keahlian"
+              class="nav-link px-3 py-2 rounded-lg dark:text-slate-300 text-slate-600 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all duration-200">
+              <i class="fa-solid fa-code mr-1.5 text-xs"></i>Keahlian</a></li>
+          <li><a href="#portofolio"
+              class="nav-link px-3 py-2 rounded-lg dark:text-slate-300 text-slate-600 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all duration-200">
+              <i class="fa-solid fa-briefcase mr-1.5 text-xs"></i>Portofolio</a></li>
+          <li><a href="#sertifikat"
+              class="nav-link px-3 py-2 rounded-lg dark:text-slate-300 text-slate-600 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all duration-200">
+              <i class="fa-solid fa-certificate mr-1.5 text-xs"></i>Sertifikat</a></li>
+          <li><a href="#layanan"
+              class="nav-link px-3 py-2 rounded-lg dark:text-slate-300 text-slate-600 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all duration-200">
+              <i class="fa-solid fa-gear mr-1.5 text-xs"></i>Layanan</a></li>
+        </ul>
+
+        <!-- Right actions -->
+        <div class="flex items-center gap-2">
+          <!-- Google Translate -->
+          <div id="google_translate_element" class="hidden lg:block"></div>
+
+          <!-- Dark/Light toggle -->
+          <button @click="toggleTheme()"
+            class="p-2 rounded-xl dark:bg-dark-700 bg-blue-50 dark:hover:bg-dark-600 hover:bg-blue-100 transition-all duration-200 text-brand-400"
+            :title="isDark ? 'Mode Terang' : 'Mode Gelap'">
+            <i class="fa-solid text-sm" :class="isDark ? 'fa-sun text-yellow-400' : 'fa-moon text-blue-600'"></i>
+          </button>
+
+          <!-- Kontak button -->
+          <a href="#kontak"
+            class="hidden lg:flex items-center gap-2 px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-brand-600/30">
+            <i class="fa-solid fa-envelope text-xs"></i>Kontak
+          </a>
+
+          <!-- Hamburger -->
+          <button @click="mobileOpen = !mobileOpen"
+            class="lg:hidden p-2 rounded-xl dark:bg-dark-700 bg-blue-50 dark:text-slate-300 text-slate-600 transition-colors">
+            <i class="fa-solid" :class="mobileOpen ? 'fa-xmark' : 'fa-bars'"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" :class="mobileOpen ? 'open' : ''"
+      class="lg:hidden dark:bg-dark-900/98 bg-white/98 backdrop-blur-md border-t dark:border-dark-700/50 border-blue-100">
+      <div class="px-4 py-4 flex flex-col gap-1 text-sm font-medium">
+        <a href="#beranda" @click="mobileOpen=false"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl dark:text-slate-300 text-slate-700 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all">
+          <i class="fa-solid fa-house w-4 text-brand-400"></i>Beranda</a>
+        <a href="#tentang" @click="mobileOpen=false"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl dark:text-slate-300 text-slate-700 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all">
+          <i class="fa-solid fa-user w-4 text-brand-400"></i>Tentang</a>
+        <a href="#keahlian" @click="mobileOpen=false"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl dark:text-slate-300 text-slate-700 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all">
+          <i class="fa-solid fa-code w-4 text-brand-400"></i>Keahlian</a>
+        <a href="#portofolio" @click="mobileOpen=false"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl dark:text-slate-300 text-slate-700 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all">
+          <i class="fa-solid fa-briefcase w-4 text-brand-400"></i>Portofolio</a>
+        <a href="#sertifikat" @click="mobileOpen=false"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl dark:text-slate-300 text-slate-700 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all">
+          <i class="fa-solid fa-certificate w-4 text-brand-400"></i>Sertifikat</a>
+        <a href="#layanan" @click="mobileOpen=false"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl dark:text-slate-300 text-slate-700 dark:hover:bg-dark-700 hover:bg-blue-50 transition-all">
+          <i class="fa-solid fa-gear w-4 text-brand-400"></i>Layanan</a>
+        <a href="#kontak" @click="mobileOpen=false"
+          class="flex items-center gap-3 px-4 py-3 mt-1 rounded-xl bg-brand-600 text-white font-semibold">
+          <i class="fa-solid fa-envelope w-4"></i>Kontak</a>
+        <!-- Google Translate Mobile -->
+        <div id="google_translate_element_mobile" class="pt-2"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / BERANDA ===== -->
+  <section id="beranda"
+    class="relative min-h-screen flex items-center hero-bg noise-bg overflow-hidden dark:bg-dark-950 bg-gradient-to-br from-blue-50 via-white to-slate-100 pt-16">
+
+    <!-- Decorative blobs -->
+    <div
+      class="absolute -top-32 -right-32 w-96 h-96 rounded-full opacity-20 dark:opacity-10 bg-brand-600 blur-3xl pointer-events-none">
+    </div>
+    <div
+      class="absolute bottom-0 -left-20 w-72 h-72 rounded-full opacity-15 dark:opacity-10 bg-brand-500 blur-3xl pointer-events-none">
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 w-full relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Text -->
+        <div class="reveal order-2 lg:order-1">
+          <span
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full dark:bg-dark-700/80 bg-blue-100 dark:text-brand-400 text-brand-600 text-sm font-semibold mb-6 border dark:border-brand-600/20 border-brand-200">
+            <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+            Tersedia untuk proyek baru
+          </span>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold dark:text-white text-slate-900 leading-tight mb-4">
+            Halo, Saya<br>
+            <span class="bg-gradient-to-r from-brand-400 to-brand-600 bg-clip-text text-transparent">Deni Wenda</span>
+          </h1>
+
+          <p class="text-lg dark:text-slate-300 text-slate-600 leading-relaxed mb-6 max-w-lg">
+            <strong class="dark:text-white text-slate-800 font-semibold">Web Developer Jayapura —</strong> yang fokus
+            membangun website modern, responsif, dan fungsional. Saya membantu UMKM, bisnis lokal, dan personal brand
+            memiliki website profesional yang cepat, mudah digunakan, dan siap mendukung pertumbuhan bisnis di Papua
+            maupun seluruh Indonesia.
+          </p>
+
+          <div class="flex flex-wrap gap-3 mb-8">
+            <a href="#portofolio"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold transition-all duration-200 hover:shadow-xl hover:shadow-brand-600/30 hover:-translate-y-0.5">
+              <i class="fa-solid fa-folder-open text-sm"></i>Lihat Proyek
+            </a>
+            <a href="https://wa.me/6281274973062?text=Halo,%20saya%20tertarik%20dengan%20layanan%20pembuatan%20Website.%20Saya%20ingin%20berkonsultasi%20lebih%20lanjut."
+              target="_blank"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl dark:bg-dark-700 bg-white dark:text-slate-200 text-slate-700 font-semibold border dark:border-dark-600 border-slate-200 hover:border-brand-500 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+              <i class="fa-brands fa-whatsapp text-green-400"></i>Chat dengan Saya
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-3">
+            <div class="glass-card rounded-2xl p-4 text-center dark-card">
+              <div
+                class="text-2xl font-extrabold bg-gradient-to-r from-brand-400 to-brand-500 bg-clip-text text-transparent">
+                2+</div>
+              <div class="text-xs dark:text-slate-400 text-slate-500 font-medium mt-0.5">Tahun Pengalaman</div>
+            </div>
+            <div class="glass-card rounded-2xl p-4 text-center dark-card">
+              <div
+                class="text-2xl font-extrabold bg-gradient-to-r from-brand-400 to-brand-500 bg-clip-text text-transparent">
+                4+</div>
+              <div class="text-xs dark:text-slate-400 text-slate-500 font-medium mt-0.5">Proyek Selesai</div>
+            </div>
+            <div class="glass-card rounded-2xl p-4 text-center dark-card">
+              <div
+                class="text-2xl font-extrabold bg-gradient-to-r from-brand-400 to-brand-500 bg-clip-text text-transparent">
+                3</div>
+              <div class="text-xs dark:text-slate-400 text-slate-500 font-medium mt-0.5">Sertifikat</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="flex justify-center order-1 lg:order-2 reveal">
+          <div class="relative">
+            <!-- Spinning ring -->
+            <div class="absolute inset-0 profile-ring rounded-full scale-[1.08] opacity-60"></div>
+            <div
+              class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 dark:border-dark-800 border-white shadow-2xl animate-float">
+              <img src="assets/img/Profile.png" alt="Deni Wenda — Web Developer" class="w-full h-full object-cover"
+                loading="lazy">
+            </div>
+            <!-- Badge -->
+            <div
+              class="absolute -bottom-3 -right-3 glass-card rounded-2xl px-4 py-2 flex items-center gap-2 shadow-xl dark-card">
+              <i class="fa-solid fa-code text-brand-400"></i>
+              <span id="typing-text" class="text-xs font-bold dark:text-white text-slate-800"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TENTANG ===== -->
+  <section id="tentang" class="py-24 section-bg-alt relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 reveal">
+        <span
+          class="inline-flex items-center gap-2 text-brand-400 text-sm font-semibold uppercase tracking-widest mb-3">
+          <i class="fa-solid fa-user"></i> Tentang Saya
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold dark:text-white text-slate-900">Web Developer dari Jayapura,
+          Papua</h2>
+      </div>
+
+      <div class="glass-card rounded-3xl p-6 sm:p-10 dark-card reveal">
+        <div class="grid md:grid-cols-3 gap-8 items-start">
+
+          <!-- Profile image + social -->
+          <div class="flex flex-col items-center gap-4">
+            <div
+              class="relative w-57 h-57 rounded-2xl overflow-hidden shadow-xl border-2 dark:border-dark-600 border-slate-200">
+              <img src="assets/img/about-img.png" alt="Deni Wenda" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div class="flex gap-2">
+              <a href="https://www.facebook.com/eni.273806" target="_blank" aria-label="Facebook"
+                class="w-10 h-10 rounded-xl bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center transition-all hover:-translate-y-0.5 shadow-md hover:shadow-blue-600/40">
+                <i class="fa-brands fa-facebook-f text-sm"></i></a>
+              <a href="https://www.instagram.com/den.i1981?igsh=ZWhnOGpvMTdpc2Jq" target="_blank" aria-label="Instagram"
+                class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-orange-400 text-white flex items-center justify-center transition-all hover:-translate-y-0.5 shadow-md hover:shadow-pink-500/40">
+                <i class="fa-brands fa-instagram text-sm"></i></a>
+              <a href="https://github.com/Apwenda" target="_blank" aria-label="GitHub"
+                class="w-10 h-10 rounded-xl dark:bg-slate-700 bg-slate-800 text-white flex items-center justify-center transition-all hover:-translate-y-0.5 shadow-md">
+                <i class="fa-brands fa-github text-sm"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"
+                class="w-10 h-10 rounded-xl bg-blue-700 hover:bg-blue-800 text-white flex items-center justify-center transition-all hover:-translate-y-0.5 shadow-md">
+                <i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            </div>
+          </div>
+
+          <!-- Bio text -->
+          <div class="md:col-span-2 flex flex-col gap-4">
+            <h3 class="text-xl sm:text-2xl font-bold dark:text-white text-slate-900">
+              <span class="text-brand-400">Web Developer</span> — Membangun Website Modern, Responsif &amp; Fungsional
+            </h3>
+            <p class="dark:text-slate-300 text-slate-600 leading-relaxed">
+              Saya seorang Pengembang Web yang berfokus pada membangun situs modern, responsif, dan nyaman digunakan.
+              Saya mengutamakan tampilan yang rapi, alur yang jelas, dan pengalaman pengguna yang solid. Setiap proyek
+              saya kerjakan dengan tujuan menghadirkan solusi digital yang efektif, fungsional, dan punya nilai nyata.
+            </p>
+            <p class="dark:text-slate-300 text-slate-600 leading-relaxed">
+              Bagi saya, setiap baris kode adalah langkah menuju solusi yang lebih baik — cara untuk menyelesaikan
+              masalah, membantu orang, dan mengekspresikan kreativitas di dunia digital.
+            </p>
+            <div class="flex flex-wrap gap-3 mt-2">
+              <a href="#portofolio"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold transition-all hover:shadow-lg hover:shadow-brand-600/30 hover:-translate-y-0.5">
+                <i class="fa-solid fa-folder-open text-xs"></i>Lihat Proyek</a>
+              <a href="#sertifikat"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl dark:bg-dark-700 bg-slate-100 dark:text-slate-200 text-slate-700 text-sm font-semibold border dark:border-dark-600 border-slate-200 transition-all hover:-translate-y-0.5">
+                <i class="fa-solid fa-certificate text-xs text-brand-400"></i>Sertifikat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEAHLIAN ===== -->
+  <section id="keahlian" class="py-24 dark:bg-dark-950 bg-white relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 reveal">
+        <span
+          class="inline-flex items-center gap-2 text-brand-400 text-sm font-semibold uppercase tracking-widest mb-3">
+          <i class="fa-solid fa-code"></i> Keahlian
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold dark:text-white text-slate-900">Teknologi yang Saya Kuasai</h2>
+        <p class="dark:text-slate-400 text-slate-500 mt-3 max-w-xl mx-auto">Saya mengembangkan antarmuka yang bersih,
+          responsif, dan mudah digunakan — sambil terus memperluas keahlian untuk menjadi full-stack developer.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 reveal">
+        <!-- HTML -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(228,77,38,0.15)">
+            <i class="fa-brands fa-html5 text-3xl" style="color:#e44d26"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">HTML5</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Struktur & Semantik</div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(38,77,228,0.15)">
+            <i class="fa-brands fa-css3-alt text-3xl" style="color:#264de4"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">CSS3</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Layout & Animasi</div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(247,223,30,0.15)">
+            <i class="fa-brands fa-js text-3xl" style="color:#f7df1e"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">JavaScript</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Interaksi & DOM</div>
+          </div>
+        </div>
+
+        <!-- Tailwind -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(6,182,212,0.15)">
+            <i class="fa-solid fa-wind text-3xl" style="color:#06b6d4"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">Tailwind CSS</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Utility-First CSS</div>
+          </div>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(121,82,179,0.15)">
+            <i class="fa-brands fa-bootstrap text-3xl" style="color:#7952b3"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">Bootstrap</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Grid & Komponen</div>
+          </div>
+        </div>
+        <!-- Responsive Design -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(59,130,246,0.15)">
+            <i class="fa-solid fa-mobile-screen-button text-3xl" style="color:#3b82f6"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">Responsive Design</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Mobile Friendly UI</div>
+          </div>
+        </div>
+
+        <!-- SEO On-Page -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(34,197,94,0.15)">
+            <i class="fa-solid fa-magnifying-glass-chart text-3xl" style="color:#22c55e"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">SEO On-Page</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Search Optimization</div>
+          </div>
+        </div>
+
+        <!-- Google Analytics -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(249,115,22,0.15)">
+            <i class="fa-solid fa-chart-line text-3xl" style="color:#f97316"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">Google Analytics</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Traffic Insights</div>
+          </div>
+        </div>
+
+        <!-- Git & GitHub -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(100,116,139,0.15)">
+            <i class="fa-brands fa-github text-3xl" style="color:#64748b"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">Git & GitHub</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Version Control</div>
+          </div>
+        </div>
+
+        <!-- Web Performance -->
+        <div class="skill-tag glass-card dark-card rounded-2xl p-5 flex flex-col items-center gap-3 cursor-default">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:rgba(239,68,68,0.15)">
+            <i class="fa-solid fa-gauge-high text-3xl" style="color:#ef4444"></i>
+          </div>
+          <div class="text-center">
+            <div class="font-bold dark:text-white text-slate-800 text-sm">Web Performance</div>
+            <div class="text-xs dark:text-slate-400 text-slate-500 mt-0.5">Speed Optimization</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTOFOLIO ===== -->
+  <section id="portofolio" class="py-24 section-bg-alt relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 reveal">
+        <span
+          class="inline-flex items-center gap-2 text-brand-400 text-sm font-semibold uppercase tracking-widest mb-3">
+          <i class="fa-solid fa-briefcase"></i> Portofolio
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold dark:text-white text-slate-900">Proyek Terbaru Saya</h2>
+        <p class="dark:text-slate-400 text-slate-500 mt-3 max-w-xl mx-auto">Portofolio saya mencerminkan keterampilan,
+          kreativitas, dan kemampuan saya dalam memberikan solusi digital yang efektif.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 reveal">
+
+        <!-- Card 1 -->
+        <article
+          class="glass-card dark-card rounded-3xl overflow-hidden group hover:border-brand-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-600/10">
+          <div class="overflow-hidden aspect-[16/10] bg-dark-800">
+            <img src="assets/img/card_2.png"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              alt="Website UMKM Jayapura" loading="lazy">
+          </div>
+          <div class="p-6">
+            <span
+              class="inline-flex items-center gap-1.5 text-xs text-brand-400 font-semibold uppercase tracking-wider mb-2">
+              <i class="fa-solid fa-store text-[10px]"></i>UMKM
+            </span>
+            <h5 class="text-lg font-bold dark:text-white text-slate-900 mb-2">UMKM di Jayapura</h5>
+            <p class="text-sm dark:text-slate-400 text-slate-500 leading-relaxed mb-4">
+              Website bisnis lokal di Jayapura yang tampil profesional, responsif di semua perangkat, dan sesuai
+              identitas brand klien. Dikerjakan bersama <a href="https://sacode.web.id/"
+                class="text-brand-400 font-semibold hover:underline" target="_blank">SaCode</a>.
+            </p>
+            <a href="https://givebacktools.com/" target="_blank"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-xl dark:bg-dark-700 bg-slate-100 dark:text-slate-200 text-slate-700 text-sm font-semibold border dark:border-dark-600 border-slate-200 hover:border-brand-500 transition-all hover:-translate-y-0.5">
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs text-brand-400"></i>Lihat Langsung
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article
+          class="glass-card dark-card rounded-3xl overflow-hidden group hover:border-brand-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-600/10">
+          <div class="overflow-hidden aspect-[16/10] bg-dark-800">
+            <img src="assets/img/card_3.png"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              alt="Website STT GIDI" loading="lazy">
+          </div>
+          <div class="p-6">
+            <span
+              class="inline-flex items-center gap-1.5 text-xs text-brand-400 font-semibold uppercase tracking-wider mb-2">
+              <i class="fa-solid fa-graduation-cap text-[10px]"></i>Pendidikan
+            </span>
+            <h5 class="text-lg font-bold dark:text-white text-slate-900 mb-2">Institusi Pendidikan Tinggi</h5>
+            <p class="text-sm dark:text-slate-400 text-slate-500 leading-relaxed mb-4">
+              Website resmi kampus yang mencerminkan identitas institusi secara profesional. Berkolaborasi bersama tim
+              <a href="https://nokensoft.com/" class="text-brand-400 font-semibold hover:underline"
+                target="_blank">Nokensoft</a>.
+            </p>
+            <a href="https://sttgidi.com/" target="_blank"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-xl dark:bg-dark-700 bg-slate-100 dark:text-slate-200 text-slate-700 text-sm font-semibold border dark:border-dark-600 border-slate-200 hover:border-brand-500 transition-all hover:-translate-y-0.5">
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs text-brand-400"></i>Lihat Langsung
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article
+          class="glass-card dark-card rounded-3xl overflow-hidden group hover:border-brand-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-600/10">
+          <div class="overflow-hidden aspect-[16/10] bg-dark-800">
+            <img src="assets/img/card_1.png"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              alt="Personal Web Hendrik Legi" loading="lazy">
+          </div>
+          <div class="p-6">
+            <span
+              class="inline-flex items-center gap-1.5 text-xs text-brand-400 font-semibold uppercase tracking-wider mb-2">
+              <i class="fa-solid fa-user-tie text-[10px]"></i>Personal
+            </span>
+            <h5 class="text-lg font-bold dark:text-white text-slate-900 mb-2">Website Personal</h5>
+            <p class="text-sm dark:text-slate-400 text-slate-500 leading-relaxed mb-4">
+              Website personal yang dibangun dari nol — tampil bersih, responsif, dan mencerminkan identitas pemiliknya
+              sebagai seorang profesional.
+            </p>
+            <a href="https://hendriklegi.com/" target="_blank"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-xl dark:bg-dark-700 bg-slate-100 dark:text-slate-200 text-slate-700 text-sm font-semibold border dark:border-dark-600 border-slate-200 hover:border-brand-500 transition-all hover:-translate-y-0.5">
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs text-brand-400"></i>Lihat Langsung
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article
+          class="glass-card dark-card rounded-3xl overflow-hidden group hover:border-brand-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-600/10">
+          <div class="overflow-hidden aspect-[16/10] bg-dark-800">
+            <img src="assets/img/card_4.png"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              alt="Isasai Restaurant Digital Menu" loading="lazy">
+          </div>
+          <div class="p-6">
+            <span
+              class="inline-flex items-center gap-1.5 text-xs text-brand-400 font-semibold uppercase tracking-wider mb-2">
+              <i class="fa-solid fa-utensils text-[10px]"></i>Digital Menu
+            </span>
+            <h5 class="text-lg font-bold dark:text-white text-slate-900 mb-2">Menu Digital Restoran</h5>
+            <p class="text-sm dark:text-slate-400 text-slate-500 leading-relaxed mb-4">
+              Menu digital yang memudahkan pelanggan melihat daftar makanan dan minuman langsung dari ponsel —
+              pengalaman memesan jadi lebih cepat dan praktis.
+            </p>
+            <a href="https://www.isasaimenu.online/" target="_blank"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-xl dark:bg-dark-700 bg-slate-100 dark:text-slate-200 text-slate-700 text-sm font-semibold border dark:border-dark-600 border-slate-200 hover:border-brand-500 transition-all hover:-translate-y-0.5">
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs text-brand-400"></i>Lihat Langsung
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-10 reveal">
+        <a href="#kontak"
+          class="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold transition-all hover:shadow-xl hover:shadow-brand-600/30 hover:-translate-y-0.5">
+          <i class="fa-solid fa-handshake text-sm"></i>Rekrut Saya
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERTIFIKAT ===== -->
+  <section id="sertifikat" class="py-24 dark:bg-dark-950 bg-white relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 reveal">
+        <span
+          class="inline-flex items-center gap-2 text-brand-400 text-sm font-semibold uppercase tracking-widest mb-3">
+          <i class="fa-solid fa-certificate"></i> Perjalanan Belajar Saya
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold dark:text-white text-slate-900">Sertifikat & Kompetensi</h2>
+        <p class="dark:text-slate-400 text-slate-500 mt-3 max-w-xl mx-auto">Sertifikat ini menjadi bagian dari
+          perjalanan belajar saya sebagai Web Developer dan menunjukkan komitmen saya untuk terus mengembangkan
+          keterampilan di bidang teknologi dan pengembangan web.</p>
+      </div>
+
+      <!-- Carousel -->
+      <div class="relative reveal" x-data="certCarousel()">
+        <div class="relative overflow-hidden rounded-3xl glass-card dark-card">
+
+          <div class="cert-slide active justify-center p-6 sm:p-10" :class="current === 0 ? 'flex' : 'hidden'">
+            <img src="assets/Sertificate/html-css.png" class="max-h-80 w-auto rounded-2xl shadow-xl"
+              alt="Sertifikat HTML & CSS" loading="lazy">
+          </div>
+          <div class="cert-slide justify-center p-6 sm:p-10" :class="current === 1 ? 'flex' : 'hidden'">
+            <img src="assets/Sertificate/js.png" class="max-h-80 w-auto rounded-2xl shadow-xl"
+              alt="Sertifikat JavaScript" loading="lazy">
+          </div>
+          <div class="cert-slide justify-center p-6 sm:p-10" :class="current === 2 ? 'flex' : 'hidden'">
+            <img src="assets/Sertificate/Sertifikat-comDev.png" class="max-h-80 w-auto rounded-2xl shadow-xl"
+              alt="Sertifikat Community Developer" loading="lazy">
+          </div>
+
+          <!-- Counter -->
+          <div
+            class="absolute top-4 right-4 px-3 py-1.5 glass-card dark-card rounded-full text-xs font-semibold dark:text-slate-300 text-slate-600">
+            <span x-text="current + 1"></span> / 3
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="flex items-center justify-center gap-4 mt-6">
+          <button @click="prev()"
+            class="w-10 h-10 rounded-xl dark:bg-dark-700 bg-slate-100 dark:hover:bg-dark-600 hover:bg-blue-100 dark:text-slate-300 text-slate-600 transition-all flex items-center justify-center hover:-translate-x-0.5">
+            <i class="fa-solid fa-chevron-left text-sm"></i>
+          </button>
+          <div class="flex gap-2">
+            <template x-for="i in 3" :key="i">
+              <button @click="current = i - 1"
+                :class="current === i - 1 ? 'w-6 bg-brand-500' : 'w-2 dark:bg-dark-600 bg-slate-300'"
+                class="h-2 rounded-full transition-all duration-300"></button>
+            </template>
+          </div>
+          <button @click="next()"
+            class="w-10 h-10 rounded-xl dark:bg-dark-700 bg-slate-100 dark:hover:bg-dark-600 hover:bg-blue-100 dark:text-slate-300 text-slate-600 transition-all flex items-center justify-center hover:translate-x-0.5">
+            <i class="fa-solid fa-chevron-right text-sm"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan" class="py-24 section-bg-alt relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <!-- Heading -->
+      <div class="text-center mb-14 reveal">
+        <span
+          class="inline-flex items-center gap-2 text-brand-400 text-sm font-semibold uppercase tracking-widest mb-3">
+          <i class="fa-solid fa-gear"></i> Layanan
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold dark:text-white text-slate-900 mb-4">
+          Layanan Jasa Pembuatan Website Jayapura
+        </h2>
+        <p class="dark:text-slate-400 text-slate-500 max-w-3xl mx-auto leading-relaxed mb-6">
+          Saya membantu membangun, mengembangkan, dan memperbaiki website agar tampil modern,
+          responsif, dan mudah digunakan — termasuk membuat menu digital untuk bisnis.
+        </p>
+        <a href="#kontak"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold transition-all hover:shadow-lg hover:shadow-brand-600/30 hover:-translate-y-0.5 text-sm">
+          <i class="fa-solid fa-paper-plane text-xs"></i>
+          Mulai Diskusi
+        </a>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+
+        <!-- Company Profile -->
+        <div
+          class="glass-card dark-card rounded-2xl p-5 group hover:border-brand-500/30 transition-all hover:-translate-y-1 flex flex-col h-full">
+          <div
+            class="w-10 h-10 rounded-xl bg-brand-600/15 flex items-center justify-center mb-3 group-hover:bg-brand-600/25 transition-colors">
+            <i class="fa-solid fa-building text-brand-400"></i>
+          </div>
+          <h5 class="font-bold dark:text-white text-slate-800 mb-1.5">Website Company Profile</h5>
+          <p class="text-sm dark:text-slate-400 text-slate-500">
+            Tampilkan identitas bisnis Anda secara profesional dengan website company profile yang elegan dan
+            informatif.
+          </p>
+          <ul class="text-sm dark:text-slate-400 text-slate-500 space-y-2 mt-2 flex-1">
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Desain profesional & modern</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Halaman: Beranda, Tentang, Layanan, Kontak
+            </li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Formulir kontak & integrasi WhatsApp</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>SEO On-Page dasar</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Responsif di semua perangkat</li>
+          </ul>
+          <div class="mt-4 pt-4 border-t border-slate-200/50 dark:border-slate-700/50">
+            <p class="text-xs font-semibold uppercase tracking-widest dark:text-slate-500 text-slate-400 mb-2">Cocok
+              untuk</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> PT / CV
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Biro
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Lembaga
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Landing Page -->
+        <div
+          class="glass-card dark-card rounded-2xl p-5 group hover:border-brand-500/30 transition-all hover:-translate-y-1 flex flex-col h-full">
+          <div
+            class="w-10 h-10 rounded-xl bg-brand-600/15 flex items-center justify-center mb-3 group-hover:bg-brand-600/25 transition-colors">
+            <i class="fa-solid fa-bullseye text-brand-400"></i>
+          </div>
+          <h5 class="font-bold dark:text-white text-slate-800 mb-1.5">Landing Page Bisnis</h5>
+          <p class="text-sm dark:text-slate-400 text-slate-500">
+            Halaman powerful untuk meningkatkan konversi, mendapatkan lead, dan mempromosikan produk atau layanan Anda.
+          </p>
+          <ul class="text-sm dark:text-slate-400 text-slate-500 space-y-2 mt-2 flex-1">
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Copywriting persuasif & berorientasi
+              konversi</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Tombol CTA WhatsApp & telepon</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Testimoni & social proof</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Pengerjaan cepat 3–5 hari kerja</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Gratis revisi 2x</li>
+          </ul>
+          <div class="mt-4 pt-4 border-t border-slate-200/50 dark:border-slate-700/50">
+            <p class="text-xs font-semibold uppercase tracking-widest dark:text-slate-500 text-slate-400 mb-2">Cocok
+              untuk</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Promosi
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Event
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Produk Baru
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- UMKM -->
+        <div
+          class="glass-card dark-card rounded-2xl p-5 group hover:border-brand-500/30 transition-all hover:-translate-y-1 flex flex-col h-full">
+          <div
+            class="w-10 h-10 rounded-xl bg-brand-600/15 flex items-center justify-center mb-3 group-hover:bg-brand-600/25 transition-colors">
+            <i class="fa-solid fa-store text-brand-400"></i>
+          </div>
+          <h5 class="font-bold dark:text-white text-slate-800 mb-1.5">Website UMKM</h5>
+          <p class="text-sm dark:text-slate-400 text-slate-500">
+            Solusi digital terjangkau untuk pelaku usaha agar bisa bersaing di era digital.
+          </p>
+          <ul class="text-sm dark:text-slate-400 text-slate-500 space-y-2 mt-2 flex-1">
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Tampilan produk / layanan menarik</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Integrasi WhatsApp untuk order langsung</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Peta lokasi Google Maps</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Desain sesuai identitas brand</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Mudah ditemukan di Google</li>
+          </ul>
+          <div class="mt-4 pt-4 border-t border-slate-200/50 dark:border-slate-700/50">
+            <p class="text-xs font-semibold uppercase tracking-widest dark:text-slate-500 text-slate-400 mb-2">Cocok
+              untuk</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Toko
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Kafe
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Jasa Lokal
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Menu -->
+        <div
+          class="glass-card dark-card rounded-2xl p-5 group hover:border-brand-500/30 transition-all hover:-translate-y-1 flex flex-col h-full">
+          <div
+            class="w-10 h-10 rounded-xl bg-brand-600/15 flex items-center justify-center mb-3 group-hover:bg-brand-600/25 transition-colors">
+            <i class="fa-solid fa-utensils text-brand-400"></i>
+          </div>
+          <h5 class="font-bold dark:text-white text-slate-800 mb-1.5">Digital Menu Restoran/Caffee</h5>
+          <p class="text-sm dark:text-slate-400 text-slate-500">
+            Menu digital QR Code yang modern dan mudah diupdate tanpa biaya cetak ulang.
+          </p>
+          <ul class="text-sm dark:text-slate-400 text-slate-500 space-y-2 mt-2 flex-1">
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Tampilan menu bersih & menarik</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Kategori menu terstruktur</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Update harga & menu mandiri</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>QR Code siap cetak</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Akses langsung dari HP pelanggan</li>
+          </ul>
+          <div class="mt-4 pt-4 border-t border-slate-200/50 dark:border-slate-700/50">
+            <p class="text-xs font-semibold uppercase tracking-widest dark:text-slate-500 text-slate-400 mb-2">Cocok
+              untuk</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Restoran
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Warung
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Catering
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maintenance -->
+        <div
+          class="glass-card dark-card rounded-2xl p-5 group hover:border-brand-500/30 transition-all hover:-translate-y-1 flex flex-col h-full">
+          <div
+            class="w-10 h-10 rounded-xl bg-brand-600/15 flex items-center justify-center mb-3 group-hover:bg-brand-600/25 transition-colors">
+            <i class="fa-solid fa-screwdriver-wrench text-brand-400"></i>
+          </div>
+          <h5 class="font-bold dark:text-white text-slate-800 mb-1.5">Maintenance Website</h5>
+          <p class="text-sm dark:text-slate-400 text-slate-500">
+            Pastikan website Anda selalu optimal, aman, dan terupdate.
+          </p>
+          <ul class="text-sm dark:text-slate-400 text-slate-500 space-y-2 mt-2 flex-1">
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Update konten & tampilan</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Monitoring keamanan & backup</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Perbaikan error & bug</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Optimasi kecepatan</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Laporan bulanan</li>
+          </ul>
+          <div class="mt-4 pt-4 border-t border-slate-200/50 dark:border-slate-700/50">
+            <p class="text-xs font-semibold uppercase tracking-widest dark:text-slate-500 text-slate-400 mb-2">Tipe
+              Layanan</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-rotate text-[8px]"></i> Berlangganan Bulanan
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Personal Branding -->
+        <div
+          class="glass-card dark-card rounded-2xl p-5 group hover:border-brand-500/30 transition-all hover:-translate-y-1 flex flex-col h-full">
+          <div
+            class="w-10 h-10 rounded-xl bg-brand-600/15 flex items-center justify-center mb-3 group-hover:bg-brand-600/25 transition-colors">
+            <i class="fa-solid fa-user text-brand-400"></i>
+          </div>
+          <h5 class="font-bold dark:text-white text-slate-800 mb-1.5">Website Personal Branding</h5>
+          <p class="text-sm dark:text-slate-400 text-slate-500">
+            Bangun citra profesional Anda secara online dengan website personal branding.
+          </p>
+          <ul class="text-sm dark:text-slate-400 text-slate-500 space-y-2 mt-2 flex-1">
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Desain portofolio menarik</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Halaman tentang, layanan & kontak</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Integrasi sosial media & CV</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Blog / artikel opsional</li>
+            <li><i class="fa-solid fa-circle-check text-brand-400 mr-2"></i>Domain & hosting siap pakai</li>
+          </ul>
+          <div class="mt-4 pt-4 border-t border-slate-200/50 dark:border-slate-700/50">
+            <p class="text-xs font-semibold uppercase tracking-widest dark:text-slate-500 text-slate-400 mb-2">Cocok
+              untuk</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Freelancer
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Profesional
+              </span>
+              <span
+                class="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-brand-600/10 text-brand-400">
+                <i class="fa-solid fa-circle-dot text-[8px]"></i> Kreator
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAK ===== -->
+  <section id="kontak" class="py-24 dark:bg-dark-950 bg-white relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 reveal">
+        <span
+          class="inline-flex items-center gap-2 text-brand-400 text-sm font-semibold uppercase tracking-widest mb-3">
+          <i class="fa-solid fa-envelope"></i> Kontak
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold dark:text-white text-slate-900">Hubungi Deni Wenda — Web
+          Developer Jayapura</h2>
+      </div>
+
+      <div class="glass-card dark-card rounded-3xl p-6 sm:p-10 reveal">
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+
+          <!-- Contact info -->
+          <div>
+            <h4 class="text-xl font-bold dark:text-white text-slate-900 mb-2">Siap Membantu!</h4>
+            <p class="dark:text-slate-400 text-slate-500 mb-6">Saya siap membantu membangun website yang Anda butuhkan.
+              Hubungi saya melalui salah satu kanal berikut.</p>
+
+            <div class="flex flex-col gap-3 mb-6">
+              <div
+                class="flex items-center gap-3 p-3 rounded-xl dark:bg-dark-800/50 bg-slate-50 border dark:border-dark-700 border-slate-100">
+                <div class="w-9 h-9 rounded-xl bg-brand-600/15 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-location-dot text-brand-400 text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-xs dark:text-slate-500 text-slate-400 font-medium">Lokasi</div>
+                  <div class="text-sm dark:text-slate-200 text-slate-700 font-semibold">Jayapura, Papua, Indonesia</div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 p-3 rounded-xl dark:bg-dark-800/50 bg-slate-50 border dark:border-dark-700 border-slate-100">
+                <div class="w-9 h-9 rounded-xl bg-brand-600/15 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-envelope text-brand-400 text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-xs dark:text-slate-500 text-slate-400 font-medium">Email</div>
+                  <a href="mailto:deniwenda@gmail.com"
+                    class="text-sm text-brand-400 font-semibold hover:underline">dheniwhenda@gmail.com</a>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 p-3 rounded-xl dark:bg-dark-800/50 bg-slate-50 border dark:border-dark-700 border-slate-100">
+                <div class="w-9 h-9 rounded-xl bg-brand-600/15 flex items-center justify-center flex-shrink-0">
+                  <i class="fa-solid fa-phone text-brand-400 text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-xs dark:text-slate-500 text-slate-400 font-medium">Telepon / WhatsApp</div>
+                  <a href="tel:+6285397945203" class="text-sm text-brand-400 font-semibold hover:underline">+62 812 7497
+                    3062</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social -->
+            <div class="flex gap-2">
+              <a href="https://www.facebook.com/eni.273806" target="_blank" aria-label="Facebook"
+                class="w-10 h-10 rounded-xl bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center transition-all hover:-translate-y-0.5 shadow-md hover:shadow-blue-600/40">
+                <i class="fa-brands fa-facebook-f text-sm"></i></a>
+              <a href="https://www.instagram.com/den.i1981?igsh=ZWhnOGpvMTdpc2Jq" target="_blank" aria-label="Instagram"
+                class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-orange-400 text-white flex items-center justify-center transition-all hover:-translate-y-0.5 shadow-md">
+                <i class="fa-brands fa-instagram text-sm"></i></a>
+              <a href="https://github.com/Apwenda" target="_blank" aria-label="GitHub"
+                class="w-10 h-10 rounded-xl dark:bg-slate-700 bg-slate-800 text-white flex items-center justify-center transition-all hover:-translate-y-0.5 shadow-md">
+                <i class="fa-brands fa-github text-sm"></i></a>
+              <a href="https://wa.me/6281274973062?text=Halo,%20saya%20tertarik%20dengan%20layanan%20pembuatan%20Website.%20Saya%20ingin%20berkonsultasi%20lebih%20lanjut."
+                target="_blank" aria-label="WhatsApp"
+                class="w-10 h-10 rounded-xl bg-green-500 hover:bg-green-600 text-white flex items-center justify-center transition-all hover:-translate-y-0.5 shadow-md hover:shadow-green-500/40">
+                <i class="fa-brands fa-whatsapp text-sm"></i></a>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div>
+            <div
+              class="overflow-hidden rounded-2xl shadow-xl border dark:border-dark-700 border-slate-200 h-64 sm:h-80">
+              <iframe title="Google Maps Jayapura"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127508.3782740913!2d140.6401348!3d-2.5916024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x682548d4d0fdb1a9%3A0x3039d80b220e6f0!2sJayapura%2C%20Papua!5e0!3m2!1sid!2sid!4v1700000000000"
+                class="w-full h-full" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="py-8 dark:bg-dark-900 bg-slate-100 border-t dark:border-dark-700/50 border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+      <div class="flex items-center gap-2">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+          <rect width="32" height="32" rx="8" fill="#1e3a5f" />
+          <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+            font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="17" fill="#60a5fa">D</text>
+        </svg>
+
+        <span class="text-sm dark:text-slate-400 text-slate-500">
+          © 2025
+          <span class="dark:text-slate-200 text-slate-700 font-semibold">
+            Deni Wenda
+          </span>.
+          Released under the MIT License.
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs dark:text-slate-500 text-slate-400">
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-map-marker-alt text-brand-400"></i>
+          Jayapura, Papua
+        </span>
+
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-code text-brand-400"></i>
+          Built with ❤️ & Open Source
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ===== WhatsApp Float ===== -->
+  <a href="https://wa.me/6281274973062?text=Halo,%20saya%20tertarik%20dengan%20layanan%20pembuatan%20Website.%20Saya%20ingin%20berkonsultasi%20lebih%20lanjut."
+    target="_blank" class="wa-float" aria-label="Hubungi via WhatsApp">
+    <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+  </a>
+  <!-- ===== ALPINE.JS APP ===== -->
+  <script>
+    function app() {
+      return {
+        isDark: true,
+        scrolled: false,
+        mobileOpen: false,
+        init() {
+          // Load saved preference
+          const saved = localStorage.getItem('theme');
+          if (saved === 'light') {
+            this.isDark = false;
+            document.documentElement.classList.remove('dark');
+          } else {
+            this.isDark = true;
+            document.documentElement.classList.add('dark');
+          }
+
+          // Scroll listener
+          window.addEventListener('scroll', () => {
+            this.scrolled = window.scrollY > 20;
+          });
+
+          // Reveal on scroll
+          const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+              if (e.isIntersecting) { e.target.classList.add('visible'); }
+            });
+          }, { threshold: 0.12 });
+          document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+          // Active nav
+          const sections = document.querySelectorAll('section[id], header[id]');
+          const navLinks = document.querySelectorAll('.nav-link');
+          window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+              if (window.scrollY >= s.offsetTop - 100) current = s.id;
+            });
+            navLinks.forEach(l => {
+              l.classList.remove('active');
+              if (l.getAttribute('href') === '#' + current) l.classList.add('active');
+            });
+          });
+        },
+        toggleTheme() {
+          this.isDark = !this.isDark;
+          if (this.isDark) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+          }
+        }
+      }
+    }
+
+    function certCarousel() {
+      return {
+        current: 0,
+        total: 3,
+        next() { this.current = (this.current + 1) % this.total; },
+        prev() { this.current = (this.current - 1 + this.total) % this.total; },
+        init() {
+          setInterval(() => this.next(), 4000);
+        }
+      }
+    }
+
+    // Sync Google Translate to mobile
+    document.addEventListener('DOMContentLoaded', function () {
+      const el = document.getElementById('google_translate_element');
+      const mob = document.getElementById('google_translate_element_mobile');
+      if (el && mob) {
+        setTimeout(() => {
+          const select = el.querySelector('select');
+          if (select) {
+            const clone = select.cloneNode(true);
+            clone.addEventListener('change', function () {
+              select.value = this.value;
+              select.dispatchEvent(new Event('change'));
+            });
+            mob.appendChild(clone);
+          }
+        }, 1500);
+      }
+    });
+  </script>
+  <script>
+    const texts = ["Web Developer", "Web Designer"];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const typingElement = document.getElementById("typing-text");
+
+    function typeEffect() {
+      const currentText = texts[textIndex];
+      const textLength = currentText.length;
+
+      if (isDeleting) {
+        charIndex--;
+      } else {
+        charIndex++;
+      }
+
+      // 👉 ambil dari kanan ke kiri
+      typingElement.textContent = currentText.substring(textLength - charIndex);
+
+      let speed = isDeleting ? 50 : 100;
+
+      if (!isDeleting && charIndex === textLength) {
+        speed = 1500;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        speed = 500;
+      }
+
+      setTimeout(typeEffect, speed);
+    }
+
+    typeEffect();
+  </script>
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://apwenda.github.io/#person",
+    "name": "Deni Wenda",
+    "alternateName": "Apwenda",
+    "jobTitle": "Web Developer",
+    "description": "Web Developer profesional di Jayapura, Papua, Indonesia. Spesialis website UMKM, company profile, landing page, dan digital menu bisnis F&B.",
+    "url": "https://apwenda.github.io/",
+    "image": "https://apwenda.github.io/assets/img/Profile.png",
+    "email": "dheniwhenda@gmail.com",
+    "telephone": "+6285397945203",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jayapura",
+      "addressRegion": "Papua",
+      "addressCountry": "ID"
+    },
+    "sameAs": [
+      "https://github.com/Apwenda",
+      "https://www.facebook.com/eni.273806",
+      "https://www.instagram.com/den.i1981",
+      "https://wa.me/6285397945203"
+    ],
+    "knowsAbout": [
+      "HTML5", "CSS3", "JavaScript", "Tailwind CSS", "Bootstrap",
+      "Responsive Web Design", "Website UMKM", "Landing Page",
+      "Digital Menu Restoran", "Company Profile"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Sertifikat HTML & CSS"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Sertifikat JavaScript"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Sertifikat Community Developer"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://apwenda.github.io/#service",
+    "name": "Deni Wenda — Jasa Pembuatan Website Jayapura",
+    "description": "Jasa pembuatan website profesional di Jayapura, Papua. Melayani website UMKM, company profile, landing page, digital menu restoran, website institusi, personal branding, dan maintenance website.",
+    "url": "https://apwenda.github.io/",
+    "telephone": "+6285397945203",
+    "email": "dheniwhenda@gmail.com",
+    "image": "https://apwenda.github.io/assets/img/Profile.png",
+    "priceRange": "Hubungi untuk penawaran",
+    "currenciesAccepted": "IDR",
+    "paymentAccepted": "Transfer Bank, QRIS",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Jayapura"
+      },
+      {
+        "@type": "State",
+        "name": "Papua"
+      },
+      {
+        "@type": "Country",
+        "name": "Indonesia"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jayapura",
+      "addressRegion": "Papua",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -2.5916024,
+      "longitude": 140.6401348
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Layanan Pembuatan Website",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website Company Profile",
+            "description": "Pembuatan website company profile profesional untuk bisnis dan perusahaan di Jayapura dan Papua"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Landing Page",
+            "description": "Pembuatan landing page modern dan high-converting untuk produk dan kampanye pemasaran"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website UMKM",
+            "description": "Website profesional khusus UMKM di Jayapura dan Papua agar bisnis lokal tampil online"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Menu Restoran & Cafe",
+            "description": "Menu digital QR Code untuk restoran dan cafe agar pelanggan dapat melihat menu dari ponsel"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website Institusi Pendidikan",
+            "description": "Website resmi untuk sekolah, kampus, dan lembaga pendidikan di Papua"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Maintenance Website",
+            "description": "Perawatan dan perbaikan website agar selalu optimal, aman, dan up-to-date"
+          }
+        }
+      ]
+    },
+    "founder": {
+      "@id": "https://apwenda.github.io/#person"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://apwenda.github.io/#website",
+    "url": "https://apwenda.github.io/",
+    "name": "Deni Wenda — Web Developer Jayapura Papua",
+    "description": "Portfolio dan layanan jasa pembuatan website oleh Deni Wenda, Web Developer profesional di Jayapura, Papua, Indonesia",
+    "inLanguage": "id-ID",
+    "author": {
+      "@id": "https://apwenda.github.io/#person"
+    },
+    "publisher": {
+      "@id": "https://apwenda.github.io/#person"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://apwenda.github.io/?s={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Berapa biaya jasa pembuatan website di Jayapura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Biaya pembuatan website bervariasi tergantung jenis dan kompleksitas. Silakan hubungi Deni Wenda via WhatsApp di +6285397945203 untuk mendapatkan estimasi harga yang sesuai kebutuhan bisnis Anda."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah Deni Wenda melayani pembuatan website untuk UMKM di Papua?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ya, Deni Wenda melayani pembuatan website khusus UMKM di Jayapura dan seluruh Papua. Website UMKM didesain profesional, responsif di semua perangkat, dan mudah dikelola oleh pemilik bisnis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Berapa lama proses pembuatan website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Durasi pengerjaan website tergantung jenis proyek. Landing page sederhana bisa selesai dalam 3–7 hari kerja, sedangkan website company profile atau UMKM biasanya membutuhkan 1–3 minggu. Hubungi kami untuk estimasi lebih akurat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Teknologi apa yang digunakan untuk membuat website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Website dibuat menggunakan teknologi modern: HTML5, CSS3, JavaScript, Tailwind CSS, dan Bootstrap. Semua website dirancang responsif dan optimal di perangkat mobile maupun desktop."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah ada layanan maintenance website setelah jadi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ya, tersedia layanan maintenance website untuk menjaga website tetap aman, cepat, dan diperbarui sesuai kebutuhan bisnis Anda."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah bisa membuat digital menu untuk restoran atau cafe di Jayapura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ya, tersedia layanan pembuatan digital menu untuk restoran dan cafe. Pelanggan bisa mengakses menu langsung dari ponsel menggunakan QR Code — lebih praktis dan modern."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Beranda",
+        "item": "https://apwenda.github.io/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Portofolio",
+        "item": "https://apwenda.github.io/#portofolio"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Layanan",
+        "item": "https://apwenda.github.io/#layanan"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Kontak",
+        "item": "https://apwenda.github.io/#kontak"
+      }
+    ]
+  }
+]
+</script>
+
+
+  <!-- Back To Top -->
+  <button type="button" aria-label="Kembali ke atas" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    style="position:fixed;right:20px;bottom:90px;width:55px;height:55px;border-radius:50%;background:#004aad;color:#fff;z-index:9999;">
+    ↑
+  </button>
+
+</body>
+
+</html>
