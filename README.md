@@ -15,7 +15,7 @@ Modern personal portfolio website template built with HTML, Tailwind CSS, and Al
 
 ## Demo
 
-https://apwenda.github.io/
+(https://apwenda.github.io/dw-portfolio-template/)
 
 ## License
 
