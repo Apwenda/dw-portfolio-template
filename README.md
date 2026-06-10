@@ -1,14 +1,22 @@
-## License & Permissions
+# DW Portfolio Template
 
-Anda diperbolehkan menggunakan source code ini untuk:
-- Keperluan personal
-- Pembelajaran
-- Modifikasi untuk penggunaan pribadi
+Modern personal portfolio website template built with HTML, Tailwind CSS, and Alpine.js.
 
-Tidak diperbolehkan:
-- Menggunakan source code ini untuk proyek komersial tanpa izin
-- Mendistribusikan ulang tanpa mencantumkan atribusi
-- Mengklaim code ini sebagai hasil karya sendiri
+## Features
 
-Untuk permintaan lisensi komersial atau kolaborasi, silakan hubungi:
-📧 email: [dheniwhenda@gmail.com]
+- Responsive Design
+- Dark Mode
+- SEO Friendly
+- Portfolio Showcase
+- Testimonials Carousel
+- WhatsApp CTA
+- Fast Performance
+- Open Source (MIT License)
+
+## Demo
+
+https://apwenda.github.io/
+
+## License
+
+Released under the MIT License.
